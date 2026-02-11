@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Caleb Kritzar — Web Developer, Creator, and Entrepreneur." />
+  <meta name="description" content="About Caleb Kritzar — my story, mission, and what I’m building." />
   <title>Caleb Kritzar | About Me</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav">
     <div class="container nav-inner">
       <a class="logo" href="index.html" aria-label="Go to homepage">
@@ -30,83 +29,98 @@
     </div>
   </nav>
 
-  <!-- Page Hero -->
   <header class="page-hero">
     <div class="container page-hero-inner">
       <h1>About Me</h1>
-      <p class="page-subtitle">
-        I build clean, modern web experiences with practical features and strong usability.
-      </p>
+      <p class="page-subtitle">My story, what I’ve learned, and what I’m building next.</p>
     </div>
   </header>
 
   <main class="about-wrap">
 
-    <div class="about-grid">
-      <!-- Photo card (optional image) -->
-      <div class="about-photo" aria-label="Profile photo">
-        <!-- Replace with your real image path if you have one -->
-        <img src="assets/profile.png" alt="Caleb Kritzar" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;card&quot; style=&quot;margin:0; height:220px; display:flex; align-items:center; justify-content:center;&quot;><div class=&quot;muted&quot;>Add a profile image at <strong>assets/profile.png</strong></div></div>';">
+    <section class="about-card" aria-labelledby="nameTitle">
+      <h2 id="nameTitle">Caleb Kritzar</h2>
+      <p class="muted">Web Developer • Entrepreneur • Creator</p>
+
+      <div class="tag-list">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Cybersecurity Interest</span>
+        <span class="pill">Certified PC Pro</span>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="about-card" aria-labelledby="storyTitle">
+      <h2 id="storyTitle">My Story</h2>
+
+      <p class="muted">
+        My name is Caleb, and I’m a web developer and entrepreneur from Ohio. My life has involved a lot of moving across
+        Northwest Ohio, which taught me adaptability, resilience, and how to connect with people in new environments.
+      </p>
+
+      <p class="muted">
+        My education followed a winding path too — different schools, different towns, and constant adjustment. A major turning
+        point came when I enrolled at Penta Career Center. I explored business first, then construction trades, but I eventually
+        found my place in Information Technology. The problem-solving, logic, and creative potential of tech clicked for me.
+      </p>
+
+      <p class="muted">
+        In IT, I found a way to turn my long-time interest in building systems (and the creativity I enjoyed in simulation games)
+        into real skills. I pushed myself, earned certifications, and later chose to focus more on cybersecurity — learning not only
+        how to build digital infrastructure, but how to protect it.
+      </p>
+
+      <p class="muted">
+        I also live with ADHD, hydrocephalus, anxiety, PTSD, and an intellectual disability. Navigating life with these challenges
+        shaped how I see the world — it built patience, perseverance, and empathy, and it’s one reason I care so much about inclusion.
+      </p>
+
+      <p class="muted">
+        That motivation is the heart behind one of my proudest accomplishments: founding Caleb’s Merch Store. I launched it as a mission-driven
+        business designed to support, celebrate, and raise awareness for people with disabilities. It’s a way to turn personal experience into
+        something that helps other people feel seen and supported.
+      </p>
+
+      <p class="muted">
+        Today, I’m focused on building web projects, improving my skills, and growing my business with a purpose — combining digital creation,
+        entrepreneurship, and community connection.
+      </p>
+
+      <div class="spacer"></div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="business.html">Visit Business Page</a>
+        <a class="btn btn-ghost" href="resume.html">View Resume</a>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="about-card" aria-labelledby="quoteTitle">
+      <h2 id="quoteTitle">My Favorite Quote</h2>
+      <p class="muted">
+        “Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.”
+      </p>
+      <p class="muted2 small">— Albert Einstein</p>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="contact-card" aria-label="Follow links">
+      <div>
+        <div class="contact-label">Follow</div>
+        <div class="muted small">Social links:</div>
       </div>
 
-      <!-- About content -->
-      <section class="about-card" aria-labelledby="aboutTitle">
-        <h2 id="aboutTitle">Who I am</h2>
-
-        <p>
-          I’m Caleb Kritzar — a web developer, creator, and entrepreneur focused on building sites that look
-          <span class="accent">awesome</span> and work even better.
-        </p>
-
-        <p>
-          I like projects where the end result feels clean, modern, and fast — not just visually, but in how people
-          move through the page, find information, and take action.
-        </p>
-
-        <div class="tag-list" aria-label="Skills">
-          <span class="pill">HTML</span>
-          <span class="pill">CSS</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">UI Polish</span>
-          <span class="pill">UX Improvements</span>
-          <span class="pill">Performance</span>
-        </div>
-
-        <div class="spacer"></div>
-
-        <h2>What I’m focused on</h2>
-        <p class="muted">
-          Strong layout, readable typography, and features that help users — like timezone-aware business hours,
-          smooth navigation, and clean interactive sections.
-        </p>
-
-        <div class="spacer"></div>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="business.html">See my business page</a>
-          <a class="btn btn-ghost" href="resume.html">View my resume</a>
-        </div>
-      </section>
-    </div>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Find me online</h2>
-        <p class="muted">Quick links to my platforms.</p>
-      </div>
-
-      <div class="contact-card">
-        <div>
-          <div class="contact-label">Email</div>
-          <a class="contact-email" href="mailto:caleb@example.com">caleb@example.com</a>
-          <div class="muted small">Swap this email to your real one when ready.</div>
-        </div>
-
-        <div class="social-links">
-          <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
-          <a href="https://tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank" rel="noopener">YouTube</a>
-        </div>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.instagram.com/calebkritzar" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.threads.com/@calebkritzar" target="_blank" rel="noopener">Threads</a>
+        <a href="https://www.linkedin.com/in/caleb-kritzar-4685a83b0/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
       </div>
     </section>
 
