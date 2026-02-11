@@ -207,3 +207,146 @@ footer {
 .resume-timeline li {
   margin-bottom: 0.5rem;
 }
+
+/* ==================================
+   Business page layout helpers
+================================== */
+
+.page-hero {
+  background: linear-gradient(135deg, #ff6600, #ff9966);
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.page-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.card-section {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.card-header h2 {
+  margin-bottom: 0.35rem;
+}
+
+.muted {
+  color: rgba(0,0,0,0.65);
+}
+
+.hours-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1rem 0 1.25rem;
+}
+
+.hours-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.06);
+  font-weight: 600;
+}
+
+.hours-status {
+  font-weight: 600;
+}
+
+.status-open {
+  color: #0a7a2f;
+}
+
+.status-closed {
+  color: #b00020;
+}
+
+.hours-table-wrap {
+  overflow-x: auto;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.25rem;
+}
+
+.hours-table th,
+.hours-table td {
+  text-align: left;
+  padding: 0.9rem 0.75rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.day-col {
+  width: 220px;
+  font-weight: 700;
+}
+
+.time-col {
+  font-weight: 600;
+}
+
+.hours-next {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 820px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-mini-title {
+  margin-bottom: 0.5rem;
+}
+
+.clean-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.clean-list li {
+  padding: 0.35rem 0;
+}
+
+.link-strong {
+  color: #ff6600;
+  font-weight: 800;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 1.25rem 0;
+}
