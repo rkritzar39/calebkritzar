@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="ember">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Caleb Kritzar business page — merch store mission, contact, and hours." />
+  <meta name="description" content="Caleb Kritzar business page — Merch Store mission, contact, and business hours." />
   <title>Caleb Kritzar | Business</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,10 +16,10 @@
         <span class="logo-text">Caleb Kritzar</span>
       </a>
 
-      <div class="nav-right">
+      <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Change theme">
-          <span class="theme-icon" aria-hidden="true"></span>
-          <span class="theme-label">Theme: Ember</span>
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span class="theme-label" id="themeLabel">Theme</span>
         </button>
 
         <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
@@ -53,19 +53,19 @@
         <div class="card-header">
           <h2 id="hoursTitle">Business Hours</h2>
           <p class="muted">
-            Monday–Saturday, 7:30 AM–6:00 PM Eastern. Sunday closed.
+            Schedule is set in Eastern Time (America/New_York): Monday–Saturday, 7:30 AM–6:00 PM. Sunday closed.
           </p>
         </div>
 
         <div class="hours-meta">
           <div class="hours-pill" id="userTzPill">Detecting your time zone…</div>
-          <div class="hours-status" id="openStatus">Checking status…</div>
+          <div class="hours-pill" id="sourceTzPill">Schedule time zone: America/New_York</div>
         </div>
 
-        <!-- Premium Status Banner -->
+        <!-- Premium banner -->
         <div class="hours-banner" id="hoursBanner">
           <div class="hours-banner-left">
-            <span class="status-dot" id="statusDot" aria-hidden="true"></span>
+            <span class="status-dot neutral" id="statusDot" aria-hidden="true"></span>
             <div>
               <div class="hours-banner-title" id="bannerTitle">Checking…</div>
               <div class="hours-banner-sub" id="bannerSub">—</div>
@@ -74,11 +74,12 @@
 
           <div class="hours-banner-actions">
             <button class="mini-btn" id="copyHoursBtn" type="button">Copy hours</button>
-            <button class="mini-btn" id="addCalendarBtn" type="button">Add to calendar</button>
+            <button class="mini-btn" id="addCalendarBtn" type="button">Add next open</button>
           </div>
         </div>
 
         <div class="hours-table-wrap" id="hoursTableWrap"></div>
+
         <div class="hours-next" id="nextOpen"></div>
       </div>
     </section>
@@ -97,33 +98,8 @@
         </p>
 
         <p class="muted">
-          Caleb’s Merch Store was built on the belief that every person deserves to be seen, valued, and included. Our journey started with a desire
-          to create products that do more than just look good — items that carry a message of dignity, understanding, and belonging.
-        </p>
-
-        <p class="muted">
-          Every product we design is rooted in that mission. Whether it’s clothing, accessories, or custom items, each piece is created with care and purpose.
+          Caleb’s Merch Store was built on the belief that every person deserves to be seen, valued, and included.
           We aim to spark conversations, raise awareness, and bring representation where it’s often overlooked.
-        </p>
-
-        <p class="muted">
-          When someone chooses our merchandise, they’re not just making a purchase — they’re becoming part of a movement that supports inclusion and shines a light
-          on the strengths and stories of people with disabilities.
-        </p>
-
-        <p class="muted">
-          At Caleb’s Merch Store, we focus on community first. We believe kindness makes a difference. We believe small acts matter. And we believe that when people come
-          together with heart and intention, real change begins.
-        </p>
-
-        <p class="muted">
-          Your support helps us grow, reach more people, and expand the impact we can make. Every order helps continue the work of creating a world where everyone is welcomed,
-          respected, and encouraged to be themselves.
-        </p>
-
-        <p class="muted">
-          Thank you for visiting, for supporting our mission, and for believing in the power of inclusion. Together, we’re building something meaningful — one product, one message,
-          and one life touched at a time.
         </p>
 
         <div class="spacer"></div>
