@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caleb Kritzar | Business</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -18,38 +18,84 @@
     </div>
   </nav>
 
-  <section id="business-page">
-    <h1>My Projects & Ventures</h1>
-    <div class="business-grid">
-      <div class="business-card">
-        <img src="assets/business1.png" alt="Business 1">
-        <div class="business-info">
-          <h3>Project/Business Name</h3>
-          <p>Short description, role, and key technologies.</p>
-          <a href="#" class="business-link">View More</a>
-        </div>
-      </div>
-      <div class="business-card">
-        <img src="assets/business2.png" alt="Business 2">
-        <div class="business-info">
-          <h3>Project/Business Name</h3>
-          <p>Short description, role, and key technologies.</p>
-          <a href="#" class="business-link">View More</a>
-        </div>
-      </div>
-      <!-- Add more cards -->
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Business</h1>
+      <p class="page-subtitle">
+        Business hours shown in <strong>your local time zone</strong>.
+      </p>
     </div>
-  </section>
+  </header>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
-    <div class="social-links">
-      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
-      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
-      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
-    </div>
-  </section>
+  <main class="page-wrap">
+
+    <!-- Business Hours -->
+    <section class="card-section" aria-labelledby="hoursTitle">
+      <div class="card">
+        <div class="card-header">
+          <h2 id="hoursTitle">Business Hours</h2>
+          <p class="muted">
+            Set in Eastern Time (America/New_York): Monday–Saturday, 7:30 AM–6:00 PM
+          </p>
+        </div>
+
+        <div class="hours-meta">
+          <div class="hours-pill" id="userTzPill">Detecting your time zone…</div>
+          <div class="hours-status" id="openStatus">Checking status…</div>
+        </div>
+
+        <div class="hours-table-wrap" id="hoursTableWrap">
+          <!-- JS renders the table here -->
+        </div>
+
+        <div class="hours-next" id="nextOpen"></div>
+      </div>
+    </section>
+
+    <!-- Business Overview -->
+    <section class="card-section" aria-labelledby="bizTitle">
+      <div class="card">
+        <div class="card-header">
+          <h2 id="bizTitle">What I Do</h2>
+          <p class="muted">
+            A quick overview of services, projects, and how to reach me.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <h3 class="section-mini-title">Services</h3>
+            <ul class="clean-list">
+              <li>Web design & front-end development</li>
+              <li>Landing pages & portfolio sites</li>
+              <li>UI improvements & site performance fixes</li>
+              <li>Custom HTML/CSS/JS features</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="section-mini-title">Contact</h3>
+            <p class="muted">Fastest way to reach me:</p>
+            <p><a class="link-strong" href="mailto:caleb@example.com">caleb@example.com</a></p>
+
+            <div class="social-links">
+              <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
+              <a href="https://tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+              <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="muted">
+          Want this page to feel even more “business-ready”? Next step is adding a short
+          “How it works” section + a simple contact form (name/email/message) and a service/pricing card.
+        </p>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; 2026 Caleb Kritzar</p>
