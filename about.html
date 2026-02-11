@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="ember">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,9 +16,16 @@
         <span class="logo-text">Caleb Kritzar</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Change theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span class="theme-label" id="themeLabel">Theme</span>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
       <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
@@ -36,91 +43,69 @@
     </div>
   </header>
 
-  <main class="about-wrap">
+  <main class="page-wrap">
 
-    <section class="about-card" aria-labelledby="nameTitle">
-      <h2 id="nameTitle">Caleb Kritzar</h2>
-      <p class="muted">Web Developer • Entrepreneur • Creator</p>
+    <section class="card-section">
+      <div class="card">
+        <h2>Caleb Kritzar</h2>
+        <p class="muted">Web Developer • Entrepreneur • Creator</p>
 
-      <div class="tag-list">
-        <span class="pill">HTML</span>
-        <span class="pill">CSS</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">Cybersecurity Interest</span>
-        <span class="pill">Certified PC Pro</span>
+        <div class="tag-list">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Certified PC Pro</span>
+          <span class="pill">Cybersecurity</span>
+        </div>
       </div>
     </section>
 
-    <div class="spacer"></div>
+    <section class="card-section">
+      <div class="card">
+        <h2>My Story</h2>
+        <p class="muted">
+          I’m Caleb Kritzar — a developer and entrepreneur from Ohio. My life has involved a lot of change and adjustment,
+          which taught me adaptability and persistence. I found my place in tech through hands-on learning, problem solving,
+          and building projects that feel modern and useful.
+        </p>
+        <p class="muted">
+          I’m especially interested in front-end development and practical features that make websites easier to use.
+          I also care deeply about inclusion, which is a big part of why I created Caleb’s Merch Store — a mission-driven
+          business that supports and celebrates people with disabilities.
+        </p>
 
-    <section class="about-card" aria-labelledby="storyTitle">
-      <h2 id="storyTitle">My Story</h2>
-
-      <p class="muted">
-        My name is Caleb, and I’m a web developer and entrepreneur from Ohio. My life has involved a lot of moving across
-        Northwest Ohio, which taught me adaptability, resilience, and how to connect with people in new environments.
-      </p>
-
-      <p class="muted">
-        My education followed a winding path too — different schools, different towns, and constant adjustment. A major turning
-        point came when I enrolled at Penta Career Center. I explored business first, then construction trades, but I eventually
-        found my place in Information Technology. The problem-solving, logic, and creative potential of tech clicked for me.
-      </p>
-
-      <p class="muted">
-        In IT, I found a way to turn my long-time interest in building systems (and the creativity I enjoyed in simulation games)
-        into real skills. I pushed myself, earned certifications, and later chose to focus more on cybersecurity — learning not only
-        how to build digital infrastructure, but how to protect it.
-      </p>
-
-      <p class="muted">
-        I also live with ADHD, hydrocephalus, anxiety, PTSD, and an intellectual disability. Navigating life with these challenges
-        shaped how I see the world — it built patience, perseverance, and empathy, and it’s one reason I care so much about inclusion.
-      </p>
-
-      <p class="muted">
-        That motivation is the heart behind one of my proudest accomplishments: founding Caleb’s Merch Store. I launched it as a mission-driven
-        business designed to support, celebrate, and raise awareness for people with disabilities. It’s a way to turn personal experience into
-        something that helps other people feel seen and supported.
-      </p>
-
-      <p class="muted">
-        Today, I’m focused on building web projects, improving my skills, and growing my business with a purpose — combining digital creation,
-        entrepreneurship, and community connection.
-      </p>
-
-      <div class="spacer"></div>
-
-      <div class="cta-row">
-        <a class="btn btn-primary" href="business.html">Visit Business Page</a>
-        <a class="btn btn-ghost" href="resume.html">View Resume</a>
+        <div class="spacer"></div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="business.html">Business Page</a>
+          <a class="btn btn-ghost" href="resume.html">Resume</a>
+        </div>
       </div>
     </section>
 
-    <div class="spacer"></div>
-
-    <section class="about-card" aria-labelledby="quoteTitle">
-      <h2 id="quoteTitle">My Favorite Quote</h2>
-      <p class="muted">
-        “Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.”
-      </p>
-      <p class="muted2 small">— Albert Einstein</p>
+    <section class="card-section">
+      <div class="card">
+        <h2>My Favorite Quote</h2>
+        <p class="muted">
+          “Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.”
+        </p>
+        <p class="muted2 small">— Albert Einstein</p>
+      </div>
     </section>
 
-    <div class="spacer"></div>
+    <section class="card-section">
+      <div class="contact-card">
+        <div>
+          <div class="contact-label">Follow</div>
+          <div class="muted small">Official links:</div>
+        </div>
 
-    <section class="contact-card" aria-label="Follow links">
-      <div>
-        <div class="contact-label">Follow</div>
-        <div class="muted small">Social links:</div>
-      </div>
-
-      <div class="social-links">
-        <a href="https://www.tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
-        <a href="https://www.instagram.com/calebkritzar" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.threads.com/@calebkritzar" target="_blank" rel="noopener">Threads</a>
-        <a href="https://www.linkedin.com/in/caleb-kritzar-4685a83b0/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.instagram.com/calebkritzar" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.threads.com/@calebkritzar" target="_blank" rel="noopener">Threads</a>
+          <a href="https://www.linkedin.com/in/caleb-kritzar-4685a83b0/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
+        </div>
       </div>
     </section>
 
