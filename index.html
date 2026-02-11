@@ -1,82 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Caleb Kritzar — Portfolio</title>
-  <meta name="description" content="Caleb Kritzar portfolio" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Caleb Kritzar – Web Developer, Creator, and Entrepreneur. Explore my portfolio and projects.">
+  <title>Caleb Kritzar | Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html">Caleb's Portfolio</a>
-    <nav class="nav">
-      <a class="navlink active" href="index.html">Home</a>
-      <a class="navlink" href="business.html">Caleb's Business</a>
-      <a class="navlink" href="about.html">About Me</a>
-      <a class="navlink" href="resume.html">Resume</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="hero card">
-      <div>
-        <h1>Caleb Kritzar</h1>
-        <p class="muted">Web dev + entrepreneur. I build useful, modern sites with HTML/CSS/JS.</p>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Caleb Kritzar</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="business.html">Business</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
 
-        <div class="socials">
-          <a class="pill" href="#" target="_blank" rel="noreferrer">TikTok</a>
-          <a class="pill" href="#" target="_blank" rel="noreferrer">Instagram</a>
-          <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="pill" href="mailto:calebkritzar@gmail.com">Email</a>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Caleb Kritzar</h1>
+      <p>Web Developer • Creator • Entrepreneur</p>
+      <a href="#projects" class="cta-btn">See My Work</a>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1">
+        <div class="project-info">
+          <h3>Project Name</h3>
+          <p>Role • Technologies used • Outcome</p>
+          <a href="#" class="project-link">View Project</a>
         </div>
       </div>
-    </section>
-
-    <section class="card">
-      <h2>Mission Statement</h2>
-      <p>
-        Caleb’s Merch Store exists to celebrate every person’s worth... (paste your mission statement here)
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>My Projects</h2>
-
-      <div class="grid">
-        <article class="project">
-          <h3>Link In Bio Website</h3>
-          <p class="muted">HTML, JS, CSS • Complete (May 15, 2025)</p>
-          <div class="actions">
-            <a class="btn" href="https://busarmydude.org" target="_blank" rel="noreferrer">Visit</a>
-            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Source</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <h3>Weather Page</h3>
-          <p class="muted">Uses an API to show weather by location • Complete (July 16, 2025)</p>
-          <div class="actions">
-            <a class="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </article>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Project 2">
+        <div class="project-info">
+          <h3>Project Name</h3>
+          <p>Role • Technologies used • Outcome</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
       </div>
-    </section>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Skills</h2>
-      <div class="chips">
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">GitHub</span>
-        <span class="chip">APIs</span>
-      </div>
-    </section>
-  </main>
+  <!-- About Teaser -->
+  <section id="about-teaser">
+    <h2>About Me</h2>
+    <p>I’m a passionate web developer and digital creator. <a href="about.html">Learn more about me.</a></p>
+  </section>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Caleb Kritzar. All Rights Reserved.</span>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
+    <div class="social-links">
+      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
+      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
+      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Caleb Kritzar</p>
+    <a href="#hero" class="back-to-top">Back to top</a>
   </footer>
 
   <script src="js/script.js"></script>
