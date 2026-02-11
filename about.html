@@ -1,43 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Caleb Kritzar</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Kritzar | About Me</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html">Caleb's Portfolio</a>
-    <nav class="nav">
-      <a class="navlink" href="index.html">Home</a>
-      <a class="navlink" href="business.html">Caleb's Business</a>
-      <a class="navlink active" href="about.html">About Me</a>
-      <a class="navlink" href="resume.html">Resume</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="card">
-      <h1>About Me</h1>
-      <p class="muted">Caleb Kritzar • He/Him • Bowling Green, Ohio</p>
+  <nav>
+    <div class="logo">Caleb Kritzar</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="business.html">Business</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
 
-      <div class="prose">
-        <p>Paste your “My Story” text here from Google Sites.</p>
+  <section id="about-page">
+    <h1>About Me</h1>
+    <div class="about-content">
+      <img src="assets/profile.png" alt="Caleb Kritzar">
+      <div class="bio">
+        <p>Hello! I'm Caleb Kritzar, a web developer, digital creator, and entrepreneur. I specialize in building interactive web experiences, creative projects, and digital tools that solve real problems.</p>
+        <p>Skills: JavaScript, HTML, CSS, React, Git/GitHub, and more.</p>
+        <p>Passionate about combining technology with creativity to make meaningful projects.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Favorite Quote</h2>
-      <blockquote>
-        “Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.”
-        <span class="muted">— Albert Einstein</span>
-      </blockquote>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
+    <div class="social-links">
+      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
+      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
+      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Caleb Kritzar. All Rights Reserved.</span>
+  <footer>
+    <p>&copy; 2026 Caleb Kritzar</p>
+    <a href="index.html" class="back-to-top">Back to Home</a>
   </footer>
 
   <script src="js/script.js"></script>
