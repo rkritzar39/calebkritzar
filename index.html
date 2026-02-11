@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Caleb Kritzar – Web Developer, Creator, and Entrepreneur. Explore my work and business services." />
+  <meta name="description" content="Caleb Kritzar — Web Developer, Creator, Entrepreneur. Projects, mission, and links." />
   <title>Caleb Kritzar | Home</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,9 +11,9 @@
 
   <!-- Navigation -->
   <nav class="nav">
-    <div class="nav-inner">
+    <div class="container nav-inner">
       <a class="logo" href="index.html" aria-label="Go to homepage">
-        <span class="logo-mark"></span>
+        <span class="logo-mark" aria-hidden="true"></span>
         <span class="logo-text">Caleb Kritzar</span>
       </a>
 
@@ -43,19 +43,19 @@
         </div>
 
         <h1 class="hero-title">
-          I build clean, fast, interactive websites that feel <span class="accent">modern</span>.
+          Building clean, fast, modern websites — with real features that people actually use.
         </h1>
 
         <p class="hero-subtitle">
-          I focus on front-end development, UI polish, and practical features that make sites more usable and memorable.
+          I create web projects with strong UI, smooth UX, and practical tools (like timezone-aware hours and interactive components).
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="business.html">Work with me</a>
-          <a class="btn btn-ghost" href="resume.html">View resume</a>
+          <a class="btn btn-primary" href="business.html">Business / Services</a>
+          <a class="btn btn-ghost" href="resume.html">View Resume</a>
         </div>
 
-        <!-- Hours Badge (auto converts to visitor timezone) -->
+        <!-- Hours Badge (auto converts to visitor timezone, powered by your JS) -->
         <a class="hours-badge" href="business.html" id="hoursBadge" aria-label="View business hours">
           <div class="hours-badge-top">
             <span class="dot" id="hoursDot" aria-hidden="true"></span>
@@ -64,6 +64,24 @@
           <div class="hours-badge-main" id="hoursBadgeMain">Loading…</div>
           <div class="hours-badge-sub" id="hoursBadgeSub">Your local time zone</div>
         </a>
+
+        <div class="spacer"></div>
+
+        <div class="contact-card" aria-label="Follow links">
+          <div>
+            <div class="contact-label">FOLLOW ME ON</div>
+            <div class="muted small">All official links in one place.</div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.instagram.com/calebkritzar" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.threads.com/@calebkritzar" target="_blank" rel="noopener">Threads</a>
+            <a href="https://www.linkedin.com/in/caleb-kritzar-4685a83b0/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
+          </div>
+        </div>
+
       </div>
 
       <div class="hero-right">
@@ -71,125 +89,106 @@
           <div class="hero-card-header">
             <div class="spark" aria-hidden="true"></div>
             <div>
-              <h2 class="hero-card-title">Featured Work</h2>
-              <p class="hero-card-sub">A quick preview — more on the Business page.</p>
+              <div class="hero-card-title">Mission statement</div>
+              <div class="hero-card-sub">Caleb’s Merch Store</div>
             </div>
           </div>
 
-          <div class="mini-grid">
-            <a class="mini-item" href="business.html">
-              <div class="mini-icon">⚡</div>
-              <div>
-                <div class="mini-title">UI + UX Polish</div>
-                <div class="mini-sub">Cleaner layouts, better flow</div>
-              </div>
-            </a>
+          <div style="padding: 14px 16px 0;">
+            <p class="muted">
+              Caleb’s Merch Store exists to celebrate every person’s worth. We create merchandise with a purpose: to uplift,
+              empower, and open opportunities for people with disabilities. Every design reflects inclusion, dignity, and the belief
+              that everyone deserves to be seen and supported. The mission is to inspire connection, spark understanding, and turn
+              everyday purchases into meaningful impact—one product, one person, and one story at a time.
+            </p>
 
-            <a class="mini-item" href="business.html">
-              <div class="mini-icon">🧩</div>
-              <div>
-                <div class="mini-title">Custom Features</div>
-                <div class="mini-sub">Hours, themes, widgets</div>
-              </div>
-            </a>
+            <div class="spacer"></div>
 
-            <a class="mini-item" href="business.html">
-              <div class="mini-icon">🚀</div>
-              <div>
-                <div class="mini-title">Speed + SEO</div>
-                <div class="mini-sub">Faster pages, better results</div>
-              </div>
-            </a>
-
-            <a class="mini-item" href="business.html">
-              <div class="mini-icon">🛠️</div>
-              <div>
-                <div class="mini-title">Front-End Builds</div>
-                <div class="mini-sub">HTML / CSS / JS</div>
-              </div>
+            <a class="btn btn-primary" href="https://shop.busarmydude.org/" target="_blank" rel="noopener">
+              Shop Merchandise →
             </a>
           </div>
 
-          <div class="hero-card-footer">
-            <a class="link-strong" href="business.html">See business details →</a>
+          <div class="hero-card-footer" style="padding-top: 14px;">
+            <a class="link-strong" href="business.html">More about the business →</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main Sections -->
   <main class="container">
 
-    <section class="section">
+    <!-- Projects -->
+    <section class="section" aria-labelledby="projectsTitle">
       <div class="section-head">
-        <h2>What you get</h2>
-        <p class="muted">A clean build, a clear story, and a site that feels professional.</p>
+        <h2 id="projectsTitle">My Projects</h2>
+        <p class="muted">A few builds I’ve completed.</p>
       </div>
 
       <div class="card-grid">
         <div class="card">
-          <h3>Modern layout</h3>
-          <p class="muted">Great spacing, readable typography, and a design that feels current.</p>
-        </div>
-        <div class="card">
-          <h3>Real features</h3>
-          <p class="muted">Timezone-aware hours, theme toggles, interactive sections, and UX improvements.</p>
-        </div>
-        <div class="card">
-          <h3>Performance-first</h3>
-          <p class="muted">Optimized assets, responsive UI, and practical enhancements that load fast.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="split">
-        <div>
-          <h2>About me</h2>
+          <h3>Link In Bio Website</h3>
           <p class="muted">
-            I’m Caleb Kritzar — a developer and creator focused on building clean, useful web experiences.
+            Started Dec 2024 and finished May 2025. Built with HTML, CSS, and JavaScript.
           </p>
+          <p class="muted small"><strong>Status:</strong> Complete (May 15, 2025)</p>
+          <div class="spacer"></div>
           <div class="cta-row">
-            <a class="btn btn-primary" href="about.html">Read my story</a>
-            <a class="btn btn-ghost" href="business.html">See business page</a>
+            <a class="btn btn-primary" href="https://www.busarmydude.org" target="_blank" rel="noopener">My Website →</a>
+            <a class="btn btn-ghost" href="https://linktr.ee/Caleb_Kritzar" target="_blank" rel="noopener">Link In Bio →</a>
           </div>
         </div>
 
-        <div class="glass">
-          <div class="glass-row">
-            <div class="glass-k">Core stack</div>
-            <div class="glass-v">HTML • CSS • JavaScript</div>
+        <div class="card">
+          <h3>Weather Page</h3>
+          <p class="muted">
+            A weather website that lets others view the weather in their area. Uses an API to gather location information.
+          </p>
+          <p class="muted small"><strong>Status:</strong> Complete (July 16, 2025)</p>
+          <div class="spacer"></div>
+          <a class="btn btn-primary" href="https://weather.busarmydude.org" target="_blank" rel="noopener">
+            Open Weather Site →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Skills</h3>
+          <p class="muted">Core skills and strengths I use across projects.</p>
+          <div class="tag-list">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">UI/UX</span>
+            <span class="pill">Git/GitHub</span>
+            <span class="pill">Troubleshooting</span>
           </div>
-          <div class="glass-row">
-            <div class="glass-k">Style</div>
-            <div class="glass-v">Clean UI, strong usability</div>
-          </div>
-          <div class="glass-row">
-            <div class="glass-k">Goal</div>
-            <div class="glass-v">Make sites feel premium</div>
-          </div>
+          <div class="spacer"></div>
+          <a class="btn btn-ghost" href="about.html">About Me →</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Contact -->
+    <section class="section" aria-labelledby="contactTitle">
       <div class="section-head">
-        <h2>Contact</h2>
+        <h2 id="contactTitle">Contact</h2>
         <p class="muted">Fastest way to reach me:</p>
       </div>
 
       <div class="contact-card">
         <div>
           <div class="contact-label">Email</div>
-          <a class="contact-email" href="mailto:caleb@example.com">caleb@example.com</a>
-          <div class="muted small">I typically respond during business hours.</div>
+          <a class="contact-email" href="mailto:calebkritzar@gmail.com">calebkritzar@gmail.com</a>
+          <div class="muted small">Responses typically during business hours.</div>
         </div>
 
         <div class="social-links">
+          <a href="https://www.tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.instagram.com/calebkritzar" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.threads.com/@calebkritzar" target="_blank" rel="noopener">Threads</a>
+          <a href="https://www.linkedin.com/in/caleb-kritzar-4685a83b0/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
-          <a href="https://tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </section>
@@ -199,7 +198,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="muted small">&copy; 2026 Caleb Kritzar</div>
-      <a class="back-to-top" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top ↑</a>
+      <a class="back-to-top" href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top ↑</a>
     </div>
   </footer>
 
