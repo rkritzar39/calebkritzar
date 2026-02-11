@@ -3,26 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caleb Kritzar business page — services, contact, and timezone-aware business hours." />
   <title>Caleb Kritzar | Business</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <nav>
-    <div class="logo">Caleb Kritzar</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="business.html" class="active">Business</a>
-      <a href="resume.html">Resume</a>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="Go to homepage">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Caleb Kritzar</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="business.html" class="active">Business</a>
+        <a href="resume.html">Resume</a>
+      </div>
     </div>
   </nav>
 
+  <!-- Page Hero -->
   <header class="page-hero">
-    <div class="page-hero-inner">
+    <div class="container page-hero-inner">
       <h1>Business</h1>
       <p class="page-subtitle">
-        Business hours shown in <strong>your local time zone</strong>.
+        Hours display in <strong>your local time zone</strong>. Schedule is set in Eastern Time.
       </p>
     </div>
   </header>
@@ -35,7 +48,7 @@
         <div class="card-header">
           <h2 id="hoursTitle">Business Hours</h2>
           <p class="muted">
-            Set in Eastern Time (America/New_York): Monday–Saturday, 7:30 AM–6:00 PM
+            Eastern Time (America/New_York): Monday–Saturday, 7:30 AM–6:00 PM (EST/EDT)
           </p>
         </div>
 
@@ -44,32 +57,52 @@
           <div class="hours-status" id="openStatus">Checking status…</div>
         </div>
 
-        <div class="hours-table-wrap" id="hoursTableWrap">
-          <!-- JS renders the table here -->
-        </div>
+        <div class="hours-table-wrap" id="hoursTableWrap"></div>
 
         <div class="hours-next" id="nextOpen"></div>
       </div>
     </section>
 
-    <!-- Business Overview -->
-    <section class="card-section" aria-labelledby="bizTitle">
+    <!-- Services -->
+    <section class="card-section" aria-labelledby="servicesTitle">
       <div class="card">
         <div class="card-header">
-          <h2 id="bizTitle">What I Do</h2>
-          <p class="muted">
-            A quick overview of services, projects, and how to reach me.
-          </p>
+          <h2 id="servicesTitle">Services</h2>
+          <p class="muted">Practical work that makes sites feel premium and easier to use.</p>
         </div>
 
         <div class="two-col">
           <div>
-            <h3 class="section-mini-title">Services</h3>
+            <h3 class="section-mini-title">Web & UI</h3>
             <ul class="clean-list">
-              <li>Web design & front-end development</li>
               <li>Landing pages & portfolio sites</li>
-              <li>UI improvements & site performance fixes</li>
+              <li>Modern layout refresh (spacing, type, sections)</li>
+              <li>Interactive UI (cards, scroll behaviors, micro UX)</li>
+              <li>Theme systems & accessibility improvements</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="section-mini-title">Performance & Features</h3>
+            <ul class="clean-list">
+              <li>Speed improvements (images, scripts, structure)</li>
+              <li>Timezone-aware widgets (hours, schedules)</li>
               <li>Custom HTML/CSS/JS features</li>
+              <li>Polish passes for production-ready feel</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="two-col">
+          <div>
+            <h3 class="section-mini-title">How it works</h3>
+            <ul class="clean-list">
+              <li>1) Quick message with what you need</li>
+              <li>2) I confirm scope + plan</li>
+              <li>3) Build + revisions</li>
+              <li>4) Final delivery + polish</li>
             </ul>
           </div>
 
@@ -86,20 +119,16 @@
           </div>
         </div>
 
-        <div class="divider"></div>
-
-        <p class="muted">
-          Want this page to feel even more “business-ready”? Next step is adding a short
-          “How it works” section + a simple contact form (name/email/message) and a service/pricing card.
-        </p>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>&copy; 2026 Caleb Kritzar</p>
-    <a href="index.html" class="back-to-top">Back to Home</a>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="muted small">&copy; 2026 Caleb Kritzar</div>
+      <a class="back-to-top" href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
