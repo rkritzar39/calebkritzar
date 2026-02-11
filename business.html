@@ -1,51 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Business — Caleb Kritzar</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Kritzar | Business</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html">Caleb's Portfolio</a>
-    <nav class="nav">
-      <a class="navlink" href="index.html">Home</a>
-      <a class="navlink active" href="business.html">Caleb's Business</a>
-      <a class="navlink" href="about.html">About Me</a>
-      <a class="navlink" href="resume.html">Resume</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="card">
-      <h1>About Us</h1>
+  <nav>
+    <div class="logo">Caleb Kritzar</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="business.html" class="active">Business</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
 
-      <h2>Business Hours</h2>
-      <ul class="hours">
-        <li><span>Sunday</span><span>Closed</span></li>
-        <li><span>Monday</span><span>7:00 AM – 9:00 PM</span></li>
-        <li><span>Tuesday</span><span>7:00 AM – 9:00 PM</span></li>
-        <li><span>Wednesday</span><span>7:00 AM – 9:00 PM</span></li>
-        <li><span>Thursday</span><span>7:00 AM – 9:00 PM</span></li>
-        <li><span>Friday</span><span>7:00 AM – 9:00 PM</span></li>
-        <li><span>Saturday</span><span>7:00 AM – 9:00 PM</span></li>
-      </ul>
-
-      <div class="actions">
-        <a class="btn" href="#" target="_blank" rel="noreferrer">Shop our Merchandise</a>
-        <a class="btn ghost" href="https://busarmydude.org" target="_blank" rel="noreferrer">busarmydude.org</a>
-        <a class="btn ghost" href="mailto:calebkritzar@gmail.com">Email</a>
+  <section id="business-page">
+    <h1>My Projects & Ventures</h1>
+    <div class="business-grid">
+      <div class="business-card">
+        <img src="assets/business1.png" alt="Business 1">
+        <div class="business-info">
+          <h3>Project/Business Name</h3>
+          <p>Short description, role, and key technologies.</p>
+          <a href="#" class="business-link">View More</a>
+        </div>
       </div>
-
-      <div class="prose">
-        <p>Paste your business “Welcome to Caleb’s Merch Store…” text here.</p>
+      <div class="business-card">
+        <img src="assets/business2.png" alt="Business 2">
+        <div class="business-info">
+          <h3>Project/Business Name</h3>
+          <p>Short description, role, and key technologies.</p>
+          <a href="#" class="business-link">View More</a>
+        </div>
       </div>
-    </section>
-  </main>
+      <!-- Add more cards -->
+    </div>
+  </section>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Caleb Kritzar. All Rights Reserved.</span>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
+    <div class="social-links">
+      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
+      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
+      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Caleb Kritzar</p>
+    <a href="index.html" class="back-to-top">Back to Home</a>
   </footer>
 
   <script src="js/script.js"></script>
