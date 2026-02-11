@@ -1,39 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Resume — Caleb Kritzar</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Kritzar | Resume</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html">Caleb's Portfolio</a>
-    <nav class="nav">
-      <a class="navlink" href="index.html">Home</a>
-      <a class="navlink" href="business.html">Caleb's Business</a>
-      <a class="navlink" href="about.html">About Me</a>
-      <a class="navlink active" href="resume.html">Resume</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="card">
-      <h1>Resume</h1>
-      <p class="muted">Toledo, OH • (419) 378-7920 • calebkritzar@gmail.com</p>
+  <nav>
+    <div class="logo">Caleb Kritzar</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="business.html">Business</a>
+      <a href="resume.html" class="active">Resume</a>
+    </div>
+  </nav>
 
-      <div class="actions">
-        <a class="btn" href="assets/CALEB KRITZAR January 2026 (1).pdf" download>Download PDF</a>
-      </div>
+  <section id="resume-page">
+    <h1>My Resume</h1>
+    <p>Download my resume: <a href="assets/CALEB KRITZAR January 2026 (1).pdf" target="_blank">PDF Version</a></p>
+    <div class="resume-timeline">
+      <h3>Experience</h3>
+      <ul>
+        <li><strong>Jet's Pizza:</strong> April 2025 – September 2025</li>
+        <li><strong>The Fringe:</strong> Until December 2025</li>
+        <!-- Add more experience -->
+      </ul>
 
-      <div class="pdfWrap">
-        <iframe class="pdf" src="assets/CALEB KRITZAR January 2026 (1).pdf" title="Resume PDF"></iframe>
-      </div>
-    </section>
-  </main>
+      <h3>Skills</h3>
+      <ul>
+        <li>JavaScript, HTML, CSS</li>
+        <li>React, Git/GitHub</li>
+        <li>Web Design, UX/UI</li>
+      </ul>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Caleb Kritzar. All Rights Reserved.</span>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
+    <div class="social-links">
+      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
+      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
+      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Caleb Kritzar</p>
+    <a href="index.html" class="back-to-top">Back to Home</a>
   </footer>
 
   <script src="js/script.js"></script>
