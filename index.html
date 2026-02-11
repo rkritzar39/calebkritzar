@@ -1,79 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Caleb Kritzar – Web Developer, Creator, and Entrepreneur. Explore my portfolio and projects.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caleb Kritzar – Web Developer, Creator, and Entrepreneur. Explore my work and business services." />
   <title>Caleb Kritzar | Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <div class="logo">Caleb Kritzar</div>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="business.html">Business</a>
-      <a href="resume.html">Resume</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="Go to homepage">
+        <span class="logo-mark"></span>
+        <span class="logo-text">Caleb Kritzar</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="business.html">Business</a>
+        <a href="resume.html">Resume</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Caleb Kritzar</h1>
-      <p>Web Developer • Creator • Entrepreneur</p>
-      <a href="#projects" class="cta-btn">See My Work</a>
-    </div>
-  </section>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
 
-  <!-- Featured Projects -->
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="assets/project1.png" alt="Project 1">
-        <div class="project-info">
-          <h3>Project Name</h3>
-          <p>Role • Technologies used • Outcome</p>
-          <a href="#" class="project-link">View Project</a>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="pill-row">
+          <span class="pill">Web Developer</span>
+          <span class="pill">Creator</span>
+          <span class="pill">Entrepreneur</span>
+        </div>
+
+        <h1 class="hero-title">
+          I build clean, fast, interactive websites that feel <span class="accent">modern</span>.
+        </h1>
+
+        <p class="hero-subtitle">
+          I focus on front-end development, UI polish, and practical features that make sites more usable and memorable.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="business.html">Work with me</a>
+          <a class="btn btn-ghost" href="resume.html">View resume</a>
+        </div>
+
+        <!-- Hours Badge (auto converts to visitor timezone) -->
+        <a class="hours-badge" href="business.html" id="hoursBadge" aria-label="View business hours">
+          <div class="hours-badge-top">
+            <span class="dot" id="hoursDot" aria-hidden="true"></span>
+            <span class="hours-badge-title">Hours Today</span>
+          </div>
+          <div class="hours-badge-main" id="hoursBadgeMain">Loading…</div>
+          <div class="hours-badge-sub" id="hoursBadgeSub">Your local time zone</div>
+        </a>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="spark" aria-hidden="true"></div>
+            <div>
+              <h2 class="hero-card-title">Featured Work</h2>
+              <p class="hero-card-sub">A quick preview — more on the Business page.</p>
+            </div>
+          </div>
+
+          <div class="mini-grid">
+            <a class="mini-item" href="business.html">
+              <div class="mini-icon">⚡</div>
+              <div>
+                <div class="mini-title">UI + UX Polish</div>
+                <div class="mini-sub">Cleaner layouts, better flow</div>
+              </div>
+            </a>
+
+            <a class="mini-item" href="business.html">
+              <div class="mini-icon">🧩</div>
+              <div>
+                <div class="mini-title">Custom Features</div>
+                <div class="mini-sub">Hours, themes, widgets</div>
+              </div>
+            </a>
+
+            <a class="mini-item" href="business.html">
+              <div class="mini-icon">🚀</div>
+              <div>
+                <div class="mini-title">Speed + SEO</div>
+                <div class="mini-sub">Faster pages, better results</div>
+              </div>
+            </a>
+
+            <a class="mini-item" href="business.html">
+              <div class="mini-icon">🛠️</div>
+              <div>
+                <div class="mini-title">Front-End Builds</div>
+                <div class="mini-sub">HTML / CSS / JS</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero-card-footer">
+            <a class="link-strong" href="business.html">See business details →</a>
+          </div>
         </div>
       </div>
-      <div class="project-card">
-        <img src="assets/project2.png" alt="Project 2">
-        <div class="project-info">
-          <h3>Project Name</h3>
-          <p>Role • Technologies used • Outcome</p>
-          <a href="#" class="project-link">View Project</a>
+    </div>
+  </header>
+
+  <!-- Main Sections -->
+  <main class="container">
+
+    <section class="section">
+      <div class="section-head">
+        <h2>What you get</h2>
+        <p class="muted">A clean build, a clear story, and a site that feels professional.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Modern layout</h3>
+          <p class="muted">Great spacing, readable typography, and a design that feels current.</p>
+        </div>
+        <div class="card">
+          <h3>Real features</h3>
+          <p class="muted">Timezone-aware hours, theme toggles, interactive sections, and UX improvements.</p>
+        </div>
+        <div class="card">
+          <h3>Performance-first</h3>
+          <p class="muted">Optimized assets, responsive UI, and practical enhancements that load fast.</p>
         </div>
       </div>
-      <!-- Add more project cards as needed -->
+    </section>
+
+    <section class="section section-soft">
+      <div class="split">
+        <div>
+          <h2>About me</h2>
+          <p class="muted">
+            I’m Caleb Kritzar — a developer and creator focused on building clean, useful web experiences.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="about.html">Read my story</a>
+            <a class="btn btn-ghost" href="business.html">See business page</a>
+          </div>
+        </div>
+
+        <div class="glass">
+          <div class="glass-row">
+            <div class="glass-k">Core stack</div>
+            <div class="glass-v">HTML • CSS • JavaScript</div>
+          </div>
+          <div class="glass-row">
+            <div class="glass-k">Style</div>
+            <div class="glass-v">Clean UI, strong usability</div>
+          </div>
+          <div class="glass-row">
+            <div class="glass-k">Goal</div>
+            <div class="glass-v">Make sites feel premium</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Fastest way to reach me:</p>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <div class="contact-label">Email</div>
+          <a class="contact-email" href="mailto:caleb@example.com">caleb@example.com</a>
+          <div class="muted small">I typically respond during business hours.</div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
+          <a href="https://tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="muted small">&copy; 2026 Caleb Kritzar</div>
+      <a class="back-to-top" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top ↑</a>
     </div>
-  </section>
-
-  <!-- About Teaser -->
-  <section id="about-teaser">
-    <h2>About Me</h2>
-    <p>I’m a passionate web developer and digital creator. <a href="about.html">Learn more about me.</a></p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
-    <div class="social-links">
-      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
-      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
-      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Caleb Kritzar</p>
-    <a href="#hero" class="back-to-top">Back to top</a>
   </footer>
 
   <script src="js/script.js"></script>
