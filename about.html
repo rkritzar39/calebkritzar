@@ -1,48 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Caleb Kritzar — Web Developer, Creator, and Entrepreneur." />
   <title>Caleb Kritzar | About Me</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <nav>
-    <div class="logo">Caleb Kritzar</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About Me</a>
-      <a href="business.html">Business</a>
-      <a href="resume.html">Resume</a>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="Go to homepage">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Caleb Kritzar</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="business.html">Business</a>
+        <a href="resume.html">Resume</a>
+      </div>
     </div>
   </nav>
 
-  <section id="about-page">
-    <h1>About Me</h1>
-    <div class="about-content">
-      <img src="assets/profile.png" alt="Caleb Kritzar">
-      <div class="bio">
-        <p>Hello! I'm Caleb Kritzar, a web developer, digital creator, and entrepreneur. I specialize in building interactive web experiences, creative projects, and digital tools that solve real problems.</p>
-        <p>Skills: JavaScript, HTML, CSS, React, Git/GitHub, and more.</p>
-        <p>Passionate about combining technology with creativity to make meaningful projects.</p>
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="container page-hero-inner">
+      <h1>About Me</h1>
+      <p class="page-subtitle">
+        I build clean, modern web experiences with practical features and strong usability.
+      </p>
+    </div>
+  </header>
+
+  <main class="about-wrap">
+
+    <div class="about-grid">
+      <!-- Photo card (optional image) -->
+      <div class="about-photo" aria-label="Profile photo">
+        <!-- Replace with your real image path if you have one -->
+        <img src="assets/profile.png" alt="Caleb Kritzar" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;card&quot; style=&quot;margin:0; height:220px; display:flex; align-items:center; justify-content:center;&quot;><div class=&quot;muted&quot;>Add a profile image at <strong>assets/profile.png</strong></div></div>';">
       </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:caleb@example.com">caleb@example.com</a></p>
-    <div class="social-links">
-      <a href="https://x.com/KritzarCaleb" target="_blank">X</a>
-      <a href="https://tiktok.com/@calebkritzar" target="_blank">TikTok</a>
-      <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank">YouTube</a>
-    </div>
-  </section>
+      <!-- About content -->
+      <section class="about-card" aria-labelledby="aboutTitle">
+        <h2 id="aboutTitle">Who I am</h2>
 
-  <footer>
-    <p>&copy; 2026 Caleb Kritzar</p>
-    <a href="index.html" class="back-to-top">Back to Home</a>
+        <p>
+          I’m Caleb Kritzar — a web developer, creator, and entrepreneur focused on building sites that look
+          <span class="accent">awesome</span> and work even better.
+        </p>
+
+        <p>
+          I like projects where the end result feels clean, modern, and fast — not just visually, but in how people
+          move through the page, find information, and take action.
+        </p>
+
+        <div class="tag-list" aria-label="Skills">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">UI Polish</span>
+          <span class="pill">UX Improvements</span>
+          <span class="pill">Performance</span>
+        </div>
+
+        <div class="spacer"></div>
+
+        <h2>What I’m focused on</h2>
+        <p class="muted">
+          Strong layout, readable typography, and features that help users — like timezone-aware business hours,
+          smooth navigation, and clean interactive sections.
+        </p>
+
+        <div class="spacer"></div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="business.html">See my business page</a>
+          <a class="btn btn-ghost" href="resume.html">View my resume</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Find me online</h2>
+        <p class="muted">Quick links to my platforms.</p>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <div class="contact-label">Email</div>
+          <a class="contact-email" href="mailto:caleb@example.com">caleb@example.com</a>
+          <div class="muted small">Swap this email to your real one when ready.</div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://x.com/KritzarCaleb" target="_blank" rel="noopener">X</a>
+          <a href="https://tiktok.com/@calebkritzar" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://youtube.com/channel/UCCtY0ICFG3qmIU1TZKAvERA" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="muted small">&copy; 2026 Caleb Kritzar</div>
+      <a class="back-to-top" href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
